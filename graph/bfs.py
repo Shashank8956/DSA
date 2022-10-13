@@ -1,6 +1,8 @@
 # Link to GFG problem
 # https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=bfs_of_graph
 
+# BFS uses Queue and Visited Array
+
 # Function to return Breadth First Traversal of given graph.
 # V == Number of nodes
 # adj == Adjacency list
@@ -10,8 +12,8 @@ def bfsOfGraph(self, V, adj):
     visited[0] = 1       # Mark starting node, 0, as visited
     q = [0]              # Add starting node, 0, to the queue
     
-    # While the queue is not empty
-    while(len(q) > 0):
+    # While the queue is not empty (0)
+    while(len(q)):
         node = q[0]                   # Take the first element out of the queue to process it
         del q[0]                      # Remove/Pop the first element from the queue
         bfsResult.append(node)        # Add this extracted element to the result
